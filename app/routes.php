@@ -12,6 +12,7 @@
 */
 
 
+
 //Authentication layer 
 Route::get('login','SessionsController@create');
 Route::get('logout','SessionsController@destroy');

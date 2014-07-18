@@ -13,6 +13,7 @@ return array(
 	|
 	*/
 
+
 	'debug' => true,
 
 	/*
@@ -38,6 +39,7 @@ return array(
 	| ahead and set this to a sensible default for you out of the box.
 	|
 	*/
+
 
 	'timezone' => 'ASIA/SINGAPORE',
 
@@ -77,6 +79,7 @@ return array(
 	| will not be safe. Please do this before deploying an application!
 	|
 	*/
+
 
 	'key' => 'OzR3bWCkach6mEAaEQ1TSElbxCRYLw2i',
 
@@ -121,6 +124,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+
 	),
 
 	/*
