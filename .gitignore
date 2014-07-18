@@ -1,0 +1,17 @@
+/bootstrap/compiled.php
+/vendor
+/bootstrap
+composer.phar
+composer.lock
+composer.json
+artisan
+LICENSE
+CONTRIBUTING.md
+phpunit.xml
+Procfile
+README.md
+server.php
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
