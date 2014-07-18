@@ -1,7 +1,25 @@
 /bootstrap/compiled.php
 /vendor
+<<<<<<< HEAD
 composer.phar
 .env.*.php
 .env.php
 .DS_Store
 Thumbs.db
+=======
+/bootstrap
+composer.phar
+composer.lock
+composer.json
+artisan
+LICENSE
+CONTRIBUTING.md
+phpunit.xml
+Procfile
+README.md
+server.php
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+>>>>>>> 2f7ecd4d6f555a7b4cdcb12faba588bcb21f1dde

@@ -11,7 +11,34 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+
+
+//Authentication layer 
+Route::get('login','SessionsController@create');
+Route::get('logout','SessionsController@destroy');
+Route::get('goodbye','PagesController@goodbye');
+Route::resource ('sessions', 'SessionsController');
+
+// Route::get('/', function()
+// {
+// 	return View::make('wall');
+
+// });
+
+Route::get('/', 'WallController@index');
+Route::resource('/blasts', 'BlastController');
+
+// Here are the Admin Routes for the application
+Route::group(array('prefix' => 'admin', 'before' => 'auth'), function() {
+	
+	Route::get('/', 'AdminController@index')->before('auth');
+	//Wall Section
+	Route::get('/walls', 'WallController@index')->before('auth');
+	Route::resource ('/walls', 'WallController');
+
+	//Tweets Section
+	Route::get('/blasts', 'BlastController@index')->before('auth');
+	Route::resource ('/blasts', 'BlastController');
+
+
 });
